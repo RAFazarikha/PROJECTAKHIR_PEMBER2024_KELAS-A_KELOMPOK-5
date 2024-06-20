@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_bawah">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/pp"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/profil"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/usernm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:text="Anang_Mafia"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/pp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/namafor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Anang Suryadi"
+        android:fontFamily="@font/poppins"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/pp"
+        app:layout_constraintTop_toBottomOf="@id/usernm"/>
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/opsi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/kontendes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="10dp"
+        android:foregroundGravity="left|center_horizontal"
+        android:text="Pantai Goa Petapa, is an active volcano and part of the Tengger massif, in East Java, Indonesia."
+        android:fontFamily="@font/poppins"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        android:justificationMode="inter_word"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pp"/>
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHeight_max="250dp"
+        android:maxHeight="250dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/bgl"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kontendes"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gambar">
+        <ImageView
+            android:id="@+id/love"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginVertical="7dp"
+            android:src="@drawable/love1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginVertical="7dp"
+            android:src="@drawable/komen"/>
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginVertical="7dp"
+            android:src="@drawable/sare"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

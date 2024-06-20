@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FCFCFC</color>
+    <color name="birupaling">#666CA6</color>
+    <color name="birutuapaling">#3A3C5F</color>
+    <color name="abu_tranparan">#19D9D9D9</color>
+    <color name="putihtpigaputih">#CCCCCC</color>
+    <color name="putihtpigaputih2">#AEB1BD</color>
+</resources>
